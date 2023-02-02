@@ -13,7 +13,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: root
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: http://localhost:5432/postgres
   jpa:
     show-sql: true
     generate-ddl: true
