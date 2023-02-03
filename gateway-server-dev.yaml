@@ -26,7 +26,7 @@ spring:
         - id: msv-order
           uri: lb://msv-order
           predicates:
-            - Path=/api/order/**
+            - Path=/api/orders/**
         - id: msv-products
           uri: lb://msv-products
           predicates:
