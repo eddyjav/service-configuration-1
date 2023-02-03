@@ -9,14 +9,20 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 spring:
+  application:
+    name: msv-users
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: root
-    url: http://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
   jpa:
     show-sql: true
     generate-ddl: true
     hibernate:
       ddl-auto: update
     database: postgresql
+
+
+
+
