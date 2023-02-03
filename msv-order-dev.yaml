@@ -9,8 +9,6 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 spring:
-  application:
-    name: msv-users
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
