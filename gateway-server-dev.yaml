@@ -21,8 +21,8 @@ spring:
           uri: lb://msv-users
           predicates:
             - Path=/api/users/**
-          filters:
-            - AuthFilter
+          # filters:
+          #   - AuthFilter
         - id: msv-order
           uri: lb://msv-order
           predicates:
