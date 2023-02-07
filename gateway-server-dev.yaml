@@ -12,16 +12,7 @@ eureka:
 
 spring:
   cloud:
-    gateway:
-      globalcors:
-        cors-configurations:
-          '[/**]':
-            allowedOrigins: "http://localhost:3000"
-            allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
+    gateway:      
       discovery:
         locator:
           enabled: true
@@ -44,3 +35,12 @@ spring:
           uri: lb://auth-server
           predicates:
             - Path=/api/auth/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
