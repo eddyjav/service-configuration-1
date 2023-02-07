@@ -31,8 +31,17 @@ spring:
           uri: lb://msv-products
           predicates:
             - Path=/api/products/**
+        - id: msv-products
+          uri: lb://msv-products
+          predicates:
             - Path=/api/categories/**
+        - id: msv-products
+          uri: lb://msv-products
+          predicates:
             - Path=/api/discounts/**
+        - id: msv-products
+          uri: lb://msv-products
+          predicates:
             - Path=/api/featured/**
         - id: auth-server
           uri: lb://auth-server
